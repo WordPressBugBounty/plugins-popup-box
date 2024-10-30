@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Popup Box\n"
-"POT-Creation-Date: 2024-09-19 16:07+0300\n"
+"POT-Creation-Date: 2024-10-30 10:55+0200\n"
 "PO-Revision-Date: 2024-04-30 14:24+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -926,7 +926,7 @@ msgid "Popup Box"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://wordpress.org/plugins/popup-box/"
+msgid "https://wow-estore.com/item/popup-box-pro/"
 msgstr ""
 
 #. Description of the plugin/theme

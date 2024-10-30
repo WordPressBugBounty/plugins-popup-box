@@ -1,9 +1,9 @@
 <?php
 /**
  *  Plugin Name:       Popup Box
- *  Plugin URI:        https://wordpress.org/plugins/popup-box/
+ *  Plugin URI:        https://wow-estore.com/item/popup-box-pro/
  *  Description:       The most powerful creator of popups & flyouts
- *  Version:           3.2
+ *  Version:           3.2.1
  *  Author:            Wow-Company
  *  Author URI:        https://wow-estore.com/
  *  License:           GPL-2.0+
