@@ -5,7 +5,7 @@ Tags: popup, popups, pop-up, WordPress popup, popup builder
 Requires at least: 5.5
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 3.2.1
+Stable tag: 3.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -100,6 +100,11 @@ Search for answers and ask your questions at [support center](https://wordpress.
 5. Advanced display rules and targeting options.
 
 == Changelog ==
+= 3.2.2 =
+* Fixed: function 'block page'
+* Changed: icon in the dashboard menu
+* Updated: UI elements
+
 = 3.2.1 =
 * Fixed: main icon in the admin menu.
 * Fixed: minor bugs

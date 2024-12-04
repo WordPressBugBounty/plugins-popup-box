@@ -111,6 +111,10 @@ const PopupBox = function (selector, options, element) {
     let close = createCloseBtn();
     let video = videoHosting();
 
+    if (settings.block_page) {
+        self.setAttribute('aria-modal', 'true');
+    }
+
     let loop_counter = 1;
     let originalContent = content.innerHTML;
     let contentRandom = getOptionsFromHTML(originalContent);
@@ -137,7 +141,7 @@ const PopupBox = function (selector, options, element) {
         if (!settings.close_isVisible) {
             return false;
         }
-        let div = document.createElement('div');
+        let div = document.createElement('button');
         div.className = prefix + '-close';
         popup.prepend(div);
         return popup.querySelector('.' + prefix + '-close');
@@ -252,7 +256,7 @@ const PopupBox = function (selector, options, element) {
             return;
         }
 
-        if(referrerPopup() !== true) {
+        if (referrerPopup() !== true) {
             return;
         }
 
@@ -287,7 +291,7 @@ const PopupBox = function (selector, options, element) {
 
     function loopPopup() {
         const time = Math.floor(Math.random() * (settings.loop.end - settings.loop.start + 1)) + settings.loop.start;
-        if(loop_counter > settings.loop.counter) {
+        if (loop_counter > settings.loop.counter) {
             return;
         }
         setTimeout(function () {
@@ -312,6 +316,7 @@ const PopupBox = function (selector, options, element) {
         const randomIndex = Math.floor(Math.random() * options.length); // Get a random index
         return options[randomIndex].trim(); // Return the random option, removing leading/trailing whitespace
     }
+
     function getOptionsFromHTML(htmlContent) {
         const regex = /\{\{(.*?)\}\}/g;
         const options = htmlContent.match(regex)?.map(match => match.slice(2, -2));
@@ -341,14 +346,13 @@ const PopupBox = function (selector, options, element) {
             return true;
         }
 
-        if(settings.referrer_url.url === '') {
+        if (settings.referrer_url.url === '') {
             return true;
         }
         const referrerUrl = document.referrer;
 
         return referrerUrl.includes(settings.referrer_url.url);
     }
-
 
 
     function clickOpenAction() {
@@ -442,10 +446,32 @@ const PopupBox = function (selector, options, element) {
             page.forEach((el) => {
                 el.classList.add('no-scroll');
             });
+            self.focus();
+            addInert();
         }
         videoAutoPlay();
         autoClosePopup();
         trackingOpen();
+    }
+
+    // Manage Inert
+    function addInert() {
+        const bodyChildren = document.body.children;
+
+        for (let el of bodyChildren) {
+            if (el.querySelector('.ds-popup') || el.classList.contains('ds-popup')) {
+                continue;
+            }
+            el.setAttribute('inert', '');
+        }
+    }
+
+    function removeInert() {
+        const bodyChildren = document.body.children;
+
+        for (let el of bodyChildren) {
+            el.removeAttribute('inert');
+        }
     }
 
     // Youtube video auto play
@@ -548,9 +574,7 @@ const PopupBox = function (selector, options, element) {
     function clickCloseAction() {
         let closeBtn = self.querySelector('.' + settings.close_popupTrigger);
         if (closeBtn) {
-            console.log(closeBtn);
             closeBtn.addEventListener('click', (e) => {
-
                 closePopup();
             });
         }
@@ -587,12 +611,16 @@ const PopupBox = function (selector, options, element) {
             }
             popup.style.display = '';
         }, 600);
-        let page = document.querySelectorAll('html, body');
-        page.forEach((el) => {
-            el.classList.remove('no-scroll');
-        });
+
+        if (settings.block_page) {
+            let page = document.querySelectorAll('html, body');
+            page.forEach((el) => {
+                el.classList.remove('no-scroll');
+            });
+            removeInert();
+        }
         redirectOnClose();
-        if(settings.open_popup === 'loop') {
+        if (settings.open_popup === 'loop') {
             loopPopup();
         }
     }

@@ -3,7 +3,7 @@
  *  Plugin Name:       Popup Box
  *  Plugin URI:        https://wow-estore.com/item/popup-box-pro/
  *  Description:       The most powerful creator of popups & flyouts
- *  Version:           3.2.1
+ *  Version:           3.2.2
  *  Author:            Wow-Company
  *  Author URI:        https://wow-estore.com/
  *  License:           GPL-2.0+
@@ -18,6 +18,7 @@
  *  Support URI:       https://wordpress.org/support/plugin/popup-box/
  *  Item URI:          https://wow-estore.com/item/popup-box-pro/
  *  Documentation:     https://wow-estore.com/documentations/popup-box-documentation/
+ *  Change URI:        https://wordpress.org/plugins/popup-box/#developers
  *
  *  PHP version        7.4
  *
@@ -107,6 +108,7 @@ if ( ! class_exists( 'WOWP_Plugin' ) ) :
 				'support'    => 'Support URI',
 				'pro'        => 'Item URI',
 				'docs'       => 'Documentation',
+				'change'     => 'Change URI',
 			];
 			$plugin_data = get_file_data( __FILE__, $data, false );
 
