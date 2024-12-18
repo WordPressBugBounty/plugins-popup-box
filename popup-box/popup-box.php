@@ -1,9 +1,9 @@
 <?php
 /**
  *  Plugin Name:       Popup Box
- *  Plugin URI:        https://wow-estore.com/item/popup-box-pro/
+ *  Plugin URI:        https://wordpress.org/plugin/popup-box/
  *  Description:       The most powerful creator of popups & flyouts
- *  Version:           3.2.2
+ *  Version:           3.2.3
  *  Author:            Wow-Company
  *  Author URI:        https://wow-estore.com/
  *  License:           GPL-2.0+
@@ -164,10 +164,10 @@ if ( ! class_exists( 'WOWP_Plugin' ) ) :
 			$columns = "
 			id mediumint(9) NOT NULL AUTO_INCREMENT,
 			title VARCHAR(200) DEFAULT '' NOT NULL,
-			param longtext DEFAULT '' NOT NULL,
-			status boolean DEFAULT 0 NOT NULL,
-			mode boolean DEFAULT 0 NOT NULL,
-			tag text DEFAULT '' NOT NULL,
+			param LONGTEXT NOT NULL,
+			status BOOLEAN DEFAULT 0 NOT NULL,
+			mode BOOLEAN DEFAULT 0 NOT NULL,
+			tag TEXT NOT NULL,
 			PRIMARY KEY  (id)
 			";
 			DBManager::create( $columns );
