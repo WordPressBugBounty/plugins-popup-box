@@ -234,6 +234,8 @@ const PopupBox = function (selector, options, element) {
         close.classList.add(settings.close_position, settings.close_type);
         close.style.cssText = 'z-index:' + settings.popup_zindex + ';' + objConvert(settings.close_css);
         close.setAttribute('data-ds-close-text', settings.close_content);
+        const closeText = settings.close_content || 'Close popup';
+        close.setAttribute('aria-label', closeText);
         if (settings.close_outer) {
             close.classList.add('-outer');
         }
