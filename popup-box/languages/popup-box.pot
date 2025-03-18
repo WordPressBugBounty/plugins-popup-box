@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Popup Box\n"
-"POT-Creation-Date: 2024-12-04 11:46+0200\n"
+"POT-Creation-Date: 2025-03-18 10:08+0200\n"
 "PO-Revision-Date: 2024-04-30 14:24+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -86,7 +86,7 @@ msgid ""
 "Also, you can send us your ideas and suggestions for improving the plugin."
 msgstr ""
 
-#: admin/settings/1.content.php:61
+#: admin/settings/1.content.php:60
 msgid "Insert Shortcode"
 msgstr ""
 
@@ -716,11 +716,11 @@ msgstr ""
 msgid "Duplicate"
 msgstr ""
 
-#: classes/Admin/AdminNotices.php:39
+#: classes/Admin/AdminNotices.php:41
 msgid "Item Saved"
 msgstr ""
 
-#: classes/Admin/AdminNotices.php:45
+#: classes/Admin/AdminNotices.php:47
 msgid "Item Remove"
 msgstr ""
 
@@ -740,11 +740,11 @@ msgid ""
 "target=\"_blank\">rate us</a>"
 msgstr ""
 
-#: classes/Admin/Dashboard.php:145
+#: classes/Admin/Dashboard.php:146
 msgid "Add New"
 msgstr ""
 
-#: classes/Admin/Dashboard.php:179
+#: classes/Admin/Dashboard.php:181
 msgid "Update"
 msgstr ""
 
@@ -930,7 +930,7 @@ msgid "Popup Box"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://wow-estore.com/item/popup-box-pro/"
+msgid "https://wordpress.org/plugin/popup-box/"
 msgstr ""
 
 #. Description of the plugin/theme

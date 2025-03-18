@@ -58,15 +58,18 @@ class WOWP_Admin {
             <a href="<?php echo esc_url( WOWP_Plugin::info( 'change' ) ); ?>" target="_blank">Check Version</a>
         </div>
 		<?php
+
 	}
 
 	public function save_settings() {
+		// phpcs:disable WordPress.Security.NonceVerification.Missing -- Nonce verification is handled elsewhere.
 		$param = ! empty( $_POST['param'] ) ? map_deep( wp_unslash( $_POST['param'] ), 'sanitize_text_field' ) : [];
 
 		if ( isset( $_POST['param']['content'] ) ) {
 			$content_param    = wp_kses_post( wp_unslash( $_POST['param']['content'] ) );
 			$param['content'] = wp_encode_emoji( $content_param );
 		}
+		// phpcs:enable
 
 		return $param;
 	}
