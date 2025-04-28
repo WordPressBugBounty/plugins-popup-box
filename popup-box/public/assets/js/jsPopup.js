@@ -641,7 +641,7 @@ const PopupBox = function (selector, options, element) {
         if (!settings.cookie_enable) {
             return;
         }
-        const days = settings.cookie_days;
+        const days = parseFloat(settings.cookie_days);
         const now = new Date();
         const ttl = days * 24 * 60 * 60 * 1000;
         const item = {

@@ -43,6 +43,13 @@ $wp_plugins = [
 		'content' => 'Quickly create informative floating buttons that will always be within the user’s visibility, increasing his attention and providing quick access to the necessary pages of the site or action.'
 	],
 	[
+		'free'    => 'https://wordpress.org/plugins/flexi-menu/',
+		'pro'     => 'https://wow-estore.com/item/flexi-menu-pro/',
+		'icon'    => 'flexi-menu.png',
+		'title'   => 'Flexi Menu',
+		'content' => 'A powerful WordPress plugin for creating floating, dropdown, static, or context menus with ease.'
+	],
+	[
 		'free'    => 'https://wordpress.org/plugins/calculator-builder/',
 		'pro'     => 'https://calchub.xyz/downloads/calculator-builder-add-on/',
 		'icon'    => 'calchub.png',
@@ -119,13 +126,7 @@ $wp_plugins = [
 		'title'   => 'Markdown Comment',
 		'content' => 'Adds the ability to use Markdown formatting in comment.'
 	],
-	[
-		'free'    => 'https://wordpress.org/plugins/mwp-skype/',
-		'pro'     => 'https://wow-estore.com/item/wow-skype-buttons-pro/',
-		'icon'    => 'skype.png',
-		'title'   => 'Skype Buttons',
-		'content' => 'Add on a site the Skype buttons with adjustable functionality and display options.'
-	],
+
 ];
 
 $wp_themes = [

@@ -87,6 +87,9 @@ class WOWP_Admin {
 		wp_enqueue_media();
 		wp_enqueue_script( 'thickbox' );
 		wp_enqueue_style( 'thickbox' );
+
+		$url_fontawesome = WOWP_Plugin::url() . '/vendors/fontawesome/css/all.css';
+		wp_enqueue_style( 'wowp-fontawesome', $url_fontawesome, null, '6.5.1' );
 	}
 
 }

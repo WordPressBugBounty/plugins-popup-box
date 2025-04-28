@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Popup Box\n"
-"POT-Creation-Date: 2025-03-18 10:08+0200\n"
+"POT-Creation-Date: 2025-04-28 11:18+0300\n"
 "PO-Revision-Date: 2024-04-30 14:24+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: admin/pages/1.list.php:49
+#: admin/pages/1.list.php:54
 msgid "Search"
 msgstr ""
 
@@ -106,7 +106,7 @@ msgstr ""
 msgid "Visual Design"
 msgstr ""
 
-#: admin/settings/2.style.php:69 admin/settings/options/settings.php:62
+#: admin/settings/2.style.php:69 admin/settings/options/settings.php:63
 msgid "Overlay"
 msgstr ""
 
@@ -140,6 +140,241 @@ msgstr ""
 
 #: admin/settings/4.rules.php:25
 msgid "Display Rules"
+msgstr ""
+
+#: admin/settings/5.pro.php:13
+msgid "Open by Hover"
+msgstr ""
+
+#: admin/settings/5.pro.php:14
+msgid "Showcase your popup when users hover over a specific element."
+msgstr ""
+
+#: admin/settings/5.pro.php:19
+msgid "Right Click"
+msgstr ""
+
+#: admin/settings/5.pro.php:20
+msgid "Trigger the popup upon a user's right-click action."
+msgstr ""
+
+#: admin/settings/5.pro.php:25
+msgid "Selected Text"
+msgstr ""
+
+#: admin/settings/5.pro.php:26
+msgid "Prompt the popup to appear when a user selects text on your page."
+msgstr ""
+
+#: admin/settings/5.pro.php:31
+msgid "Exit Intent"
+msgstr ""
+
+#: admin/settings/5.pro.php:32
+msgid ""
+"Capture visitors attention as they attempt to leave your website (ideal for "
+"exit-intent campaigns)."
+msgstr ""
+
+#: admin/settings/5.pro.php:38
+msgid "Open/Close Custom Selectors"
+msgstr ""
+
+#: admin/settings/5.pro.php:39
+msgid ""
+"  Add custom selectors to open or close the popup, providing greater "
+"flexibility and control\n"
+"                    over modal interactions."
+msgstr ""
+
+#: admin/settings/5.pro.php:46
+msgid "Activate by URL"
+msgstr ""
+
+#: admin/settings/5.pro.php:47
+msgid ""
+"Target specific pages based on URL parameters (e.g., show a discount popup "
+"only on page with URL parameter)."
+msgstr ""
+
+#: admin/settings/5.pro.php:52
+msgid "Activate by Referrer URL"
+msgstr ""
+
+#: admin/settings/5.pro.php:53
+msgid ""
+"Tailor popup experiences for visitors arriving from particular websites (e."
+"g., display a welcome message to users coming from a partner site)."
+msgstr ""
+
+#: admin/settings/5.pro.php:58
+msgid "Geotargeting"
+msgstr ""
+
+#: admin/settings/5.pro.php:59
+msgid ""
+"Take your popups to the next level with geotargeting functionality! This "
+"powerful plugin feature allows you to display targeted popups based on the "
+"country location of your website visitors."
+msgstr ""
+
+#: admin/settings/5.pro.php:64
+msgid "Loop"
+msgstr ""
+
+#: admin/settings/5.pro.php:65
+msgid ""
+"Display the popup multiple times with random intervals for sustained "
+"engagement."
+msgstr ""
+
+#: admin/settings/5.pro.php:70
+msgid "Show once per session"
+msgstr ""
+
+#: admin/settings/5.pro.php:71
+msgid ""
+"Allows to display the popup only once during a user’s session. A session "
+"typically lasts until the browser is closed. Enabling this ensures the "
+"popup won’t repeatedly appear, enhancing user experience by avoiding "
+"redundant interruptions while maintaining visibility for new sessions."
+msgstr ""
+
+#: admin/settings/5.pro.php:76
+msgid "Forced Interaction"
+msgstr ""
+
+#: admin/settings/5.pro.php:77
+msgid ""
+"Briefly disable the close button to ensure users see your crucial "
+"information or complete an action (use with caution)."
+msgstr ""
+
+#: admin/settings/5.pro.php:82
+msgid "Redirect on Close"
+msgstr ""
+
+#: admin/settings/5.pro.php:83
+msgid "Optionally redirect visitors to another URL after closing the popup."
+msgstr ""
+
+#: admin/settings/5.pro.php:88
+msgid "Auto Close"
+msgstr ""
+
+#: admin/settings/5.pro.php:89
+msgid ""
+"Set a delay to automatically close the popup after a certain amount of time."
+msgstr ""
+
+#: admin/settings/5.pro.php:94
+msgid "Close Button Delay"
+msgstr ""
+
+#: admin/settings/5.pro.php:95
+msgid ""
+"Set a delay before the close button appears on the popup, ensuring users "
+"have ample time to\n"
+"                    view the content."
+msgstr ""
+
+#: admin/settings/5.pro.php:101
+msgid "Close After Form Submission"
+msgstr ""
+
+#: admin/settings/5.pro.php:102
+msgid ""
+"Automatically close the modal after form submission, supporting default "
+"forms, Contact Form 7, and WP Forms."
+msgstr ""
+
+#: admin/settings/5.pro.php:108
+msgid "Animation Effects"
+msgstr ""
+
+#: admin/settings/5.pro.php:109
+msgid ""
+"Choose from 28 different animation transitions to enhance your popup's "
+"visual appeal."
+msgstr ""
+
+#: admin/settings/5.pro.php:114
+msgid "Video Support"
+msgstr ""
+
+#: admin/settings/5.pro.php:115
+msgid ""
+"Seamlessly integrate videos into your popups for engaging multimedia "
+"presentations."
+msgstr ""
+
+#: admin/settings/5.pro.php:122
+msgid "Comprehensive Display Controls"
+msgstr ""
+
+#: admin/settings/5.pro.php:123
+msgid ""
+"Use post types, tags, categories, or archive pages to fine-tune where and "
+"when your popup appears. "
+msgstr ""
+
+#: admin/settings/5.pro.php:129
+msgid "Device-Based Visibility"
+msgstr ""
+
+#: admin/settings/5.pro.php:130
+msgid ""
+"Remove the popup entirely on mobile or desktop devices to optimize "
+"performance and layout per screen. "
+msgstr ""
+
+#: admin/settings/5.pro.php:136
+msgid "User Role Permissions"
+msgstr ""
+
+#: admin/settings/5.pro.php:137
+msgid ""
+"Restrict popup visibility for specific user roles (e.g., Admins, Editors, "
+"Subscribers)."
+msgstr ""
+
+#: admin/settings/5.pro.php:142
+msgid "Multilingual Support"
+msgstr ""
+
+#: admin/settings/5.pro.php:143
+msgid ""
+"Show popup based on language preferences. Compatible with WPML and Polylang."
+msgstr ""
+
+#: admin/settings/5.pro.php:148
+msgid "Scheduling"
+msgstr ""
+
+#: admin/settings/5.pro.php:149
+msgid ""
+"Schedule popup appearances based on specific days, times, and dates. This "
+"allows you to promote temporary events or campaigns without cluttering your "
+"website permanently. "
+msgstr ""
+
+#: admin/settings/5.pro.php:155
+msgid "Browser Compatibility"
+msgstr ""
+
+#: admin/settings/5.pro.php:156
+msgid ""
+"Ensure your popups display correctly across a wide range of browsers. If "
+"necessary, you can choose to hide popup for specific browsers to address "
+"compatibility issues with outdated software versions. "
+msgstr ""
+
+#: admin/settings/5.pro.php:162
+msgid "Google Analytics Integration"
+msgstr ""
+
+#: admin/settings/5.pro.php:163
+msgid " Track popup behavior directly in GA. "
 msgstr ""
 
 #: admin/settings/options/content.php:9
@@ -457,13 +692,13 @@ msgstr ""
 msgid "Show once"
 msgstr ""
 
-#: admin/settings/options/settings.php:64
-#: admin/settings/options/settings.php:71 admin/settings/options/style.php:13
+#: admin/settings/options/settings.php:65
+#: admin/settings/options/settings.php:72 admin/settings/options/style.php:13
 #: admin/settings/options/style.php:195
 msgid "Enable"
 msgstr ""
 
-#: admin/settings/options/settings.php:69
+#: admin/settings/options/settings.php:70
 msgid "Esc"
 msgstr ""
 
@@ -684,8 +919,8 @@ msgstr ""
 msgid "Show on mobile"
 msgstr ""
 
-#: admin/settings/pro-plugin.php:17
-msgid "PRO FEATURES"
+#: admin/settings/pro-plugin.php:16
+msgid "PRO VERSION"
 msgstr ""
 
 #: admin/settings/sidebar.php:23
