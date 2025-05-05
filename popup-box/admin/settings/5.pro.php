@@ -31,7 +31,12 @@ $features = [
 		'title' => __( 'Exit Intent', 'popup-box' ),
 		'desc'  => __( 'Capture visitors attention as they attempt to leave your website (ideal for exit-intent campaigns).', 'popup-box' ),
 	],
-
+	[
+		'icon'  => 'fa-solid fa-arrow-up-right-from-square',
+		'bg'    => '#353DA4',
+		'title' => __( 'External Link', 'popup-box' ),
+		'desc'  => __( 'Enable this option to automatically show a popup when a user clicks on an external link (a link leading to another website). Useful for warning users before leaving your site or showing custom messages. ', 'popup-box' ),
+	],
 	[
 		'icon'  => 'fa-solid fa-check',
 		'bg'    => '#C55FBD',

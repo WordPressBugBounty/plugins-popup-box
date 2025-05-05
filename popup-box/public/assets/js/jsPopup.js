@@ -358,13 +358,12 @@ const PopupBox = function (selector, options, element) {
 
 
     function clickOpenAction() {
-        let trigger = settings.open_popupTrigger;
-        let triggers = document.querySelectorAll('.' + trigger + ', a[href$="' + trigger + '"]');
-        triggers.forEach((e) => {
-            e.addEventListener('click', (event) => {
+        let trigger = '.' + settings.open_popupTrigger + ', a[href$="' + settings.open_popupTrigger + '"]';
+        document.addEventListener('click', function (event) {
+            if (event.target.closest(trigger)) {
                 event.preventDefault();
                 openPopup();
-            });
+            }
         });
     }
 
