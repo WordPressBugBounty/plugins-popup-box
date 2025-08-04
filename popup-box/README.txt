@@ -5,7 +5,7 @@ Tags: popup, popups, WordPress popup, popup builder, email popup
 Requires at least: 5.5
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 3.2.10
+Stable tag: 3.2.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -174,6 +174,11 @@ No. **Popup Box is lightweight and optimized for performance**, with no jQuery d
 5. Advanced display rules and targeting options.
 
 == Changelog ==
+= 3.2.11 =
+* Improved: Refactored AdminActions class for better performance and readability
+* Improved: Reordered condition checks for better execution performance
+* Updated: Added strict type hinting for method arguments in AdminActions
+
 = 3.2.10 =
 * Improved: Reorganized method order in DBManager class for better readability and maintenance
 * Improved: Minor SQL formatting for consistency
