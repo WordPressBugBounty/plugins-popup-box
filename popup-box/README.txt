@@ -1,19 +1,23 @@
-=== Popup Box - Create Popups Easily ===
+=== Popup Box – Easily Create WordPress Popups ===
 Contributors: Wpcalc, lobov
 Donate link: https://wow-estore.com/item/popup-box-pro/
-Tags: popup, popups, WordPress popup, popup builder, email popup
+Tags: popup, modal window, alert, overlay, banner
 Requires at least: 5.5
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 3.2.11
+Stable tag: 3.2.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Create beautiful, customizable popups with live preview and powerful targeting options to boost engagement and conversions.
+Popup Box lets you create responsive, customizable WordPress popups with live preview, flexible triggers, and smart targeting to boost engagement and conversions.
 
 == Description ==
 
 [📚 Documentation](https://wow-estore.com/documentations/popup-box-documentation/) | [🚀 Try Pro Demo](https://demo.wow-estore.com/popup-box-pro/)
+
+**Popup Box** is a lightweight yet powerful **WordPress popup plugin** that helps you create, customize, and manage stunning popups without coding. Perfect for **email subscription popups**, **promotional popups**, **special offers**, **announcement popups**, and **interactive content popups**.
+
+Design your popup with a **live preview builder** and choose placements. Use flexible triggers like on **load**, **scroll**, or **click**, and control exactly where your popups appear with advanced targeting rules.
 
 **Popup Box** is a powerful yet lightweight WordPress plugin that lets you easily create, customize, and manage popups with a real-time live preview. Perfect for special offers, email signups, promotions, or boosting user interaction.
 
@@ -23,7 +27,7 @@ Create beautiful, customizable popups with live preview and powerful targeting o
 - Lightweight and optimized for speed.
 - Simple setup – works with any theme.
 
-✅ **Design eye-catching popups and captivate your visitors with Popup Box!**
+✅ **Engage visitors and increase conversions with Popup Box — the ultimate WordPress popup solution!**
 
 = Main Features =
 
@@ -174,6 +178,13 @@ No. **Popup Box is lightweight and optimized for performance**, with no jQuery d
 5. Advanced display rules and targeting options.
 
 == Changelog ==
+= 3.2.13 =
+* Fixed: All iframe attributes are now properly escaped using `esc_attr()`
+
+= 3.2.12 =
+* Updated: `wp-color-picker-alpha` to version **3.0.4**.
+* Fixed: minor bug fixes
+
 = 3.2.11 =
 * Improved: Refactored AdminActions class for better performance and readability
 * Improved: Reordered condition checks for better execution performance
