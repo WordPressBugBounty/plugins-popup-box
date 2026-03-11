@@ -5,7 +5,7 @@ Tags: popup, modal window, alert, overlay, banner
 Requires at least: 5.5
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 3.2.13
+Stable tag: 3.2.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,17 +46,21 @@ Design your popup with a **live preview builder** and choose placements. Use fle
 - **Custom Backgrounds**: Use images or solid colors.
 
 ### 📦 **Content & Shortcode Support**
-- Embed rich content: Forms (like **Contact Form 7**), videos, shortcodes, and more.
+- **Video Support**: Embed YouTube or Vimeo videos using the `[videoBox]` shortcode.
+- **Custom Buttons**: Add styled buttons or close triggers with the `[buttonBox]` shortcode.
+- **Iframe Support**: Insert maps, documents, or external sites via the `[iframeBox]` shortcode.
+- **Third-Party Integration**: Works perfectly with **Contact Form 7**, **WPForms**, and other shortcode-based content.
 
 ### ⚡ **Performance & Compliance**
 - No jQuery dependencies – lightweight and fast.
-- GDPR compliant – cookie-free tracking.
+- GDPR compliant – cookie-free tracking using local storage.
 
 --
 
 = Ideal Uses for Popup Box =
 - Email subscription forms.
 - Special offers and promotions.
+- YouTube or Vimeo video showcases.
 - Lead generation.
 - Announcement popups.
 - Interactive content popups.
@@ -75,7 +79,6 @@ Unlock advanced popup features with **Popup Box Pro**:
 - **Loop Popups**: Repeatedly show popups at random intervals.
 - **Auto Close**: Set a timer for automatic popup closure.
 - **Page Redirect**: Redirect users after popup close.
-- **Video Popups**: Embed YouTube, Vimeo videos inside popups.
 
 ### 🔥 **Advanced Display Rules**
 - **URL Parameters Activation**: Show popups based on URL query strings.
@@ -178,6 +181,10 @@ No. **Popup Box is lightweight and optimized for performance**, with no jQuery d
 5. Advanced display rules and targeting options.
 
 == Changelog ==
+= 3.2.14 =
+* Fixed: issue with method `Settings::option()`.
+* Fixed: grammar issue in ListTable.php
+
 = 3.2.13 =
 * Fixed: All iframe attributes are now properly escaped using `esc_attr()`
 
