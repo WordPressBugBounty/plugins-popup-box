@@ -5,7 +5,7 @@ Tags: popup, modal window, alert, overlay, banner
 Requires at least: 5.5
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 3.2.14
+Stable tag: 3.2.15
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -181,6 +181,10 @@ No. **Popup Box is lightweight and optimized for performance**, with no jQuery d
 5. Advanced display rules and targeting options.
 
 == Changelog ==
+= 3.2.15 =
+* Fixed a minor bug with output tags
+* Fixed: a minor bug with code quality
+
 = 3.2.14 =
 * Fixed: issue with method `Settings::option()`.
 * Fixed: grammar issue in ListTable.php
