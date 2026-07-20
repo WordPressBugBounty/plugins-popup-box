@@ -3,7 +3,7 @@ Contributors: Wpcalc, lobov
 Donate link: https://wow-estore.com/item/popup-box-pro/
 Tags: popup, modal window, alert, overlay, banner
 Requires at least: 5.5
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
 Stable tag: 3.2.15
 License: GPLv2 or later
